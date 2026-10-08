@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loading...</title>
+
+    <link rel="stylesheet" href="css/loading.css">
+</head>
+<body>
+
+<div class="loading-container">
+
+    <h1>THE LOGIC OF NUMBERS</h1>
+
+    <p id="loadingText">
+        Initializing System...
+    </p>
+
+    <div class="loading-bar">
+        <div class="progress"></div>
+    </div>
+
+</div>
+
+<script>
+
+const messages = [
+"Initializing System...",
+"Loading Logic Module...",
+"Loading Set Module...",
+"Loading Graph Module...",
+"Entering Metaverse..."
+];
+
+let index = 0;
+
+const text = document.getElementById("loadingText");
+
+setInterval(()=>{
+
+    if(index < messages.length-1){
+        index++;
+        text.innerText = messages[index];
+    }
+
+},1000);
+
+setTimeout(()=>{
+
+    window.location.href = "intro.html";
+
+},5000);
+
+</script>
+
+</body>
+</html>

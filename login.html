@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Enter Your Name</title>
+
+    <link rel="stylesheet"
+          href="css/login.css">
+
+</head>
+
+<body>
+
+<div class="loginContainer">
+
+    <div class="loginBox">
+
+        <h1>
+            THE LOGIC OF NUMBERS
+        </h1>
+
+        <p class="subtitle">
+            A Discrete Structure Adventure
+        </p>
+
+        <h2>
+            WHAT SHOULD WE CALL YOU?
+        </h2>
+
+        <input
+            type="text"
+            id="playerName"
+            placeholder="Enter your name"
+            maxlength="20"
+            autocomplete="off"
+        >
+
+        <p id="errorMessage"></p>
+
+        <button id="continueButton">
+            CONTINUE
+        </button>
+
+        <button id="levelButton">
+            LEVEL SELECT
+        </button>
+
+        <button id="backButton">
+            BACK
+        </button>
+
+
+        <!-- LEVEL SELECT -->
+
+        <div id="levelPanel">
+
+            <h2>
+                SELECT LEVEL
+            </h2>
+
+            <button
+                data-level="chapter1.html">
+
+                LEVEL 1
+                <br>
+                LOGIC
+
+            </button>
+
+            <button
+                data-level="chapter2.html">
+
+                LEVEL 2
+                <br>
+                RELATIONS
+
+            </button>
+
+            <button
+                data-level="chapter3.html">
+
+                LEVEL 3
+                <br>
+                TREES
+
+            </button>
+
+            <button
+                data-level="epilogue.html">
+
+                EPILOGUE
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="login.js"></script>
+
+</body>
+
+</html>

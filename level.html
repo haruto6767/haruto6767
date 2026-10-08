@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Level Select</title>
+
+    <link rel="stylesheet"
+          href="css/level.css">
+
+</head>
+
+<body>
+
+<div class="levelContainer">
+
+    <h1>LEVEL CHAPTER</h1>
+
+    <p id="welcomeText">
+        Welcome, Player!
+    </p>
+
+
+    <div class="chapters">
+
+        <button
+            id="chapter1"
+            class="chapter"
+            onclick="startChapter(1)">
+
+            <span>LEVEL 1</span>
+
+            <strong>LOGIC</strong>
+
+            <small>
+                Gate of Truth
+            </small>
+
+        </button>
+
+
+        <button
+            id="chapter2"
+            class="chapter locked"
+            onclick="startChapter(2)">
+
+            <span>LEVEL 2</span>
+
+            <strong>RELATIONS</strong>
+
+            <small>
+                Network Nexus
+            </small>
+
+        </button>
+
+
+        <button
+            id="chapter3"
+            class="chapter locked"
+            onclick="startChapter(3)">
+
+            <span>LEVEL 3</span>
+
+            <strong>TREES</strong>
+
+            <small>
+                Infinite Data Forest
+            </small>
+
+        </button>
+
+    </div>
+
+
+    <div class="levelButtons">
+
+        <button onclick="continueChapter()">
+            CONTINUE
+        </button>
+
+        <button onclick="goBack()">
+            BACK
+        </button>
+
+    </div>
+
+</div>
+
+<script src="level.js"></script>
+
+</body>
+
+</html>
